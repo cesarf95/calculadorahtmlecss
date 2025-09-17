@@ -25,8 +25,37 @@ botaoCalcular.addEventListener('click', () => {
     }
 
     const idade = anoAtual - anoNasc;
+
+
+    const nomeDefault = nome || 'Visitante';
+
+    const mensagem = `Olá, ${nomeDefault}!
+    Voce tem ${idade} anos em ${anoAtual}`;
     
+    resultado.textContent = mensagem;
+
+    inputnome.select()
+
+
+
+    
+});
+
+[inputnome, inputAno].forEach(campo => {
+campo.addEventListener('keydown', (evento) => {
+if (evento.key === 'enter') {
+    botaoCalcular.click();
+}
 })
+})
+botaoCalcular.addEventListener('mouseenter', () => {
+    botaoCalcular.dataset.labelAntiga = botaoCalcular.textContent;
+    botaoCalcular.textContent = 'Clique Aqui!';
+});
+botaoCalcular.addEventListener('mouseleave', () => {
+    botaoCalcular.textContent = botaoCalcular.dataset.labelAntiga || 'Calcular Idade';
+});
+// O forEach() em JavaScript é um método de arrays que executa uma função específica para cada elemento de um array, permitindo iterar sobre eles de forma simples e legível, sem a necessidade de se preocupar com índices, ao contrário dos loops tradicionais for. Ele é ideal para realizar ações em cada item, como imprimir no console, mas não cria um novo array com o resultado, como o método map() faz. //
 
 
 
