@@ -7,8 +7,8 @@
     --corDeFundo: #f5620e;
     --card: #836cb9ea;
     --ink: #660f0f;
-    --brand: #163005;
-    --muted: #030303;
+    --brand: #61ce18;
+    --muted: #dbdbdb;
 
 }
 
@@ -25,8 +25,8 @@ body {
 
 /* cabeçalho */
 .site-header {
-    background: linear-gradient(90deg, #ff0000, #0eff06, rgb(49, 4, 250));
-    color: rgb(19, 19, 19);
+    background: linear-gradient(90deg, #ff0000, #0eff06,rgb(49, 4, 250), white, rgb(0, 0, 0), rgb(255, 251, 3));
+    color: rgb(157, 204, 192);
     padding: 24px 16px;
     text-align: center;
     
@@ -48,7 +48,7 @@ main{
     background: var(--card);
     border-radius: 16px;
     padding: 20px;
-    box-shadow: 0 8px 24px rgba(rgb(5, 96, 233), green, blue, alpha);
+    box-shadow: 0 8px 24px rgba(rgb(233, 5, 5), green, blue, alpha);
     border: 1px solid rgb(255, 255, 255);
 }
 
@@ -107,7 +107,7 @@ button:active {
 #resultado {
     margin-top: 14px;
     font-size: 1.05rem;
-    color: red
+    color: rgb(235, 233, 233)
 }
 
 .site-footer {
@@ -115,3 +115,4 @@ button:active {
     text-align: center;
     color:var(--muted)
 }
+
